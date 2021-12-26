@@ -1,0 +1,82 @@
+* Purpose / Goal
+** Get organized
+** Be more productive
+** Be more responsive
+** Be more dependable
+
+
+* Plan
+** Implement org files and agenda
+** Use time each morning to plan day
+** Use time each week (Sunday) to plan/organize the week
+** Properly prioritize tasks
+** Develop a list of contexts in the form of tags
+*** to break up your life 
+**** ie. home, work, personal, ham, etc.
+** Develop a list of categories or phases of work
+*** Inbox    - Things that need to be processed
+*** Waiting  - Waiting on someone/thing else
+*** Todo     - on the list to be done
+*** Next     - from the todo list, a set of ASAP actions
+*** Done     - Completed items
+*** Cancelled ? (Do I need this)
+*** Someday  - things I "long" to do when time and/or life permit.
+** Develop a list of priorities
+*** A Urgent - must be done today
+*** B        - should be done today
+*** C Convenient - could be done, but not necessary
+** Create a trigger list to be reviewed during the weekly review
+*** See this article for what it is, why I need it, and what it might look like
+**** https://lifehacker.com/use-a-weekly-review-list-to-stay-a-step-ahead-this-seme-5611657
+** What about stuff I want to memorize? Is there a way to track it and review it?
+ - this is just a bulleted list
+ - this is just a bulet
+ - 
+
+
+* What Next?
+** incorporate org-mode into production emacs
+** consider installing emacs on the Windows side
+** setup the .org files
+*** tasks.org
+**** I would consider keeping all the categories in one file.
+**** The high level headers can stay collapsed for cleanliness and organization
+**** ...Even the someday category
+*** archive.org
+**** for done and cancelled things
+*** dates.org
+**** for recurring dates, e.g. holidays, birthdays, events, and meetings
+*** projects.org
+**** I'm not sure this is necessary; something to consider
+*** habits.org
+**** for things I do everyday or frequently that I want to track
+***** reading scriptures
+***** Duolingo
+***** exercise
+***** etc.
+** Figure out a syncing method -- perhaps with git
+** Unload all the relevant stuff from trello
+** GET INTO A DAILY ROUTINE!
+
+
+
+* Accountability
+** consider setting up a journal to track your progress, effort, and consistency.
+** will remember-mode do this?
+*** http://members.optusnet.com.au/~charles57/GTD/remember.html
+
+
+
+* Reference
+** org-mode quick reference
+*** https://orgmode.org/worg/orgcard.html
+*** https://gist.github.com/drj42/1755992
+*** https://orgmode.org/
+*** http://members.optusnet.com.au/~charles57/GTD/org_dates/index.html
+*** https://bzg.fr/en/some-emacs-org-mode-features-you-may-not-know/
+** Watch System Crafters, videos 1-7
+*** https://www.youtube.com/watch?v=74zOY-vgkyw&list=PLEoMzSkcN8oPH1au7H6B7bBJ4ZO7BXjSZ&index=1
+** GTD with org-mode
+*** http://members.optusnet.com.au/~charles57/GTD/orgmode.html
+*** http://newartisans.com/2007/08/using-org-mode-as-a-day-planner/
+
