@@ -1,0 +1,28 @@
+* Inbox
+** Put magnetic hook under desk for duster
+* ToDo
+** TODO [#B] Connect backup drive to computer
+   SCHEDULED: <2021-12-29 Wed>
+** TODO [#B] Perform a backup of the Windows computer
+   SCHEDULED: <2021-12-29 Wed>
+** TODO [#B] Perform a backup of the Ubuntu computer
+   SCHEDULED: <2021-12-29 Wed>
+** TODO [#A] Pack for Utah
+   SCHEDULED: <2021-12-26 Sun>
+   - [ ] Surface
+   - [ ] Bathroom stuff
+   - [ ] Clothing
+   - [ ] chargers
+   - [ ] Cup holder mount for phone
+   - [ ] Presents
+* Meeting
+* Next
+
+* Waiting
+
+* Done
+
+* Cancelled
+
+* Someday
+
