@@ -7,14 +7,14 @@
    SCHEDULED: <2021-12-29 Wed>
 ** TODO [#B] Perform a backup of the Ubuntu computer
    SCHEDULED: <2021-12-29 Wed>
-** TODO [#A] Pack for Utah
+** DONE [#A] Pack for Utah [6/6]
    SCHEDULED: <2021-12-26 Sun>
-   - [ ] Surface
-   - [ ] Bathroom stuff
-   - [ ] Clothing
-   - [ ] chargers
-   - [ ] Cup holder mount for phone
-   - [ ] Presents
+   - [X] Surface
+   - [X] Bathroom stuff
+   - [X] Clothing
+   - [X] chargers
+   - [X] Cup holder mount for phone
+   - [X] Presents
 * Meeting
 * Next
 
