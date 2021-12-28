@@ -1,6 +1,6 @@
 * Meeting
 ** Church 
-   SCHEDULED: <2021-12-26 Sun 10:30 +1w>
+   SCHEDULED: <2022-01-02 Sun 12:00-14:00 +1w>
 * Anniversaries
 ** Todd & Alisa <1989-10-05 Thu +1y>
 
@@ -14,4 +14,6 @@
 * Holidays
 ** New Year's Day <2022-01-01 Sat +1y>
 ** Independence Day <2022-07-04 Mon +1y>
+** New Year's Eve <2022-12-31 Fri +1y>
+
 

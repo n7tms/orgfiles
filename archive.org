@@ -1,0 +1,11 @@
+* December
+
+** DONE [#A] Pack for Utah
+   SCHEDULED: <2021-12-26 Sun>
+   - [X] Surface
+   - [X] Bathroom stuff
+   - [X] Clothing
+   - [X] chargers
+   - [X] Cup holder mount for phone
+   - [X] Presents
+

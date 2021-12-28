@@ -1,28 +1,30 @@
+#+SEQ_TODO: TODO(t) NEXT(n) MEETING(m) WAITING(w) | DONE(d) CANCELLED(c)
+
 * Inbox
-** Put magnetic hook under desk for duster
-* ToDo
-** TODO [#B] Connect backup drive to computer
+
+* Inbox
+** TODO Put magnetic hook under desk for duster                        :home:
+** Talk with Dan about deliveries                                      :work:
+** Check with Keith about deliveries                                   :work:
+** Visit the broadband storage location                                :work:
+** Reschedule Kelvin 1-1                                               :work:
+** Reschedule Patrick 1-1                                              :work:
+
+** TODO [#B] Connect backup drive to computer                          :home:
    SCHEDULED: <2021-12-29 Wed>
-** TODO [#B] Perform a backup of the Windows computer
+** TODO [#B] Perform a backup of the Windows computer                  :home:
    SCHEDULED: <2021-12-29 Wed>
-** TODO [#B] Perform a backup of the Ubuntu computer
+** TODO [#B] Perform a backup of the Ubuntu computer                   :home:
    SCHEDULED: <2021-12-29 Wed>
-** TODO [#A] Pack for Utah
-   SCHEDULED: <2021-12-26 Sun>
-   - [ ] Surface
-   - [ ] Bathroom stuff
-   - [ ] Clothing
-   - [ ] chargers
-   - [ ] Cup holder mount for phone
-   - [ ] Presents
-* Meeting
-* Next
+** Wash R4                                                             :home:
+** Setup CIDER in net emacs config                                     :home:
+** MEETING Exam Session 
+   SCHEDULED: <2022-01-04 Tue 16:30-18:00>
+** TODO Deploy Ward Computers[/]
+ - [ ] coordinate with Michael
+ - [ ] contact ward clerks
+ - [ ] schedule time to swap computers
 
-* Waiting
-
-* Done
-
-* Cancelled
-
+* Active
 * Someday
 
