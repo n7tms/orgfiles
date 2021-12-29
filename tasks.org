@@ -22,6 +22,10 @@
  - [ ] schedule time to swap computers
 ** MEETING Rolling Hills Computer
    SCHEDULED: <2021-12-29 Wed 10:00-12:00>
+** Setup ECEN106 Winter 2022 Semester
+
+** TODO Got it working!
+  [2021-12-29 Wed 09:13]
 
 * Active
 * Someday

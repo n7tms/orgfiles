@@ -1,1 +1,19 @@
-* December
+* 2021
+** 2021-12 December
+*** 2021-12-29 Wednesday
+
+**** 09:13 AM - Journal                                             :journal:
+     :LOGBOOK:
+     CLOCK: [2021-12-29 Wed 09:13]--[2021-12-29 Wed 09:15] =>  0:02
+     :END:
+
+   Sometimes, the world just clicks and everything falls into place!
+I got the org-capture working. The path was wrong -- org-files vs orgfiles -- and journal.org was not in the org-agenda-files.
+
+**** 09:35 AM - Journal                                             :journal:
+     :LOGBOOK:
+     CLOCK: [2021-12-29 Wed 09:35]--[2021-12-29 Wed 09:35] =>  0:00
+     :END:
+
+   Just testing to see if the org-capture still works.
+

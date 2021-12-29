@@ -13,28 +13,21 @@
 
 
 ;(set-face-attribute 'default nil :font "Fira Code Retina" :height 10)
-;(load-theme 'tango-dark)
-(load-theme 'wombat)
+(load-theme 'tango-dark)
+;(load-theme 'wombat)
 ;(load-theme 'deeper-blue)
 
 
-; Check if the hostname is the Surface Pro
-(defun my-system-is-surface ()
-  "Return true if the system we are running on is surface pro"
-  (or
-    (string-equal system-name "RexIT-SC-Tb01")
-    (string-equal system-name "RexIT-SC-Tb01.lan")
-    )
-  )
+;; Set some variables based on the operating system
 
-; Check if the hostname is Deathstar
-(defun my-system-is-deathstar ()
-  "Return true if the system we are running on is deathstar"
-  (or
-    (string-equal system-name "deathstar")
-    (string-equal system-name "deathstar.lan")
-    )
-  )
+(cond ((eq system-type 'windows-nt)
+       ;; Windows-specific code goes here.
+       (setq org-directory "c:\\mydata\\orgfiles\\"))
+          
+      ((eq system-type 'gnu/linux)
+       ;; Linux-specific code goes here.
+       (setq org-directory "~/orgfiles/")))
+
 
 
 ;; ====================================================================================
@@ -159,50 +152,43 @@
 (use-package org
   :pin org
   :commands (org-capture org-agenda)
-  :hook (org-mode . efs/org-mode-setup)
+;  :hook (org-mode . efs/org-mode-setup)
   :config
   (setq org-ellipsis " ▾"
-	org-hide-emphasis-markers t)
+	org-hide-emphasis-markers t))
 
-  (setq org-agenda-start-with-log-mode t)
-  (setq org-log-done 'time)
-  (setq org-log-into-drawer t)
+(setq org-agenda-start-with-log-mode t)
+(setq org-log-done 'time)
+(setq org-log-into-drawer t)
 
-  (cond ((eq system-type 'windows-nt)
-         ;; Windows-specific code goes here.
-	 (setq org-agenda-files
-               '("c:\\mydata\\orgfiles\\myplan.org"
-		 "c:\\mydata\\orgfiles\\tasks.org"
-		 "c:\\mydata\\orgfiles\\dates.org")))
-          
-          ((eq system-type 'gnu/linux)
-           ;; Linux-specific code goes here.
-	   (setq org-agenda-files
-		 '("~/orgfiles/myplan.org"
-		   "~/orgfiles/tasks.org"
-		   "~/orgfiles/dates.org"))))
+(setq org-agenda-files
+      '("myplan.org"
+        "tasks.org"
+	"dates.org"
+	"journal.org"))
 
-  (setq org-refile-targets '(("archive.org" :maxlevel . 1)
-			     ("tasks.org" :maxlevel . 1)))
+
   
-  (advice-add 'org-refile :after 'org-save-all-org-buffers)
+(setq org-refile-targets '(("archive.org" :maxlevel . 1)
+			   ("tasks.org" :maxlevel . 1)))
+  
+(advice-add 'org-refile :after 'org-save-all-org-buffers)
 
-  (setq org-capture-templates
-	'(("t" "Tasks / Projects")
-	  ("tt" "Task" entry (file+olp "~/org-files/tasks.org" "Inbox")
-	   "** TODO %?\n  %U\n  %a\n  %i" :empty-lines 1)
-	  
-	  ("j" "Journal Entries")
-	  ("jj" "Journal" entry (file+olp+datetree "~/org-files/journal.org")
-	   "\n* %<%I:%M %p> - Journal :journal:\n\n%?\n\n"
-	   :clock-in :clock-resume
-	   :empty-lines 1)
-	  
+(setq org-capture-templates
+      '(("t" "Tasks / Projects")
+	("tt" "Task" entry (file+olp "~/orgfiles/tasks.org" "Inbox")
+	 "** TODO %?\n  %U\n  %a\n  %i" :empty-lines 1)
+	
+	("j" "Journal Entries")
+	("jj" "Journal" entry (file+olp+datetree "~/orgfiles/journal.org")
+	 "\n* %<%I:%M %p> - Journal :journal:\n\n%?\n\n"
+	 :clock-in :clock-resume
+	 :empty-lines 1)
 	))
- 
-) ;; org
 
-  
+;; ===== end org
+
+
   
 (use-package org-bullets
   :hook (org-mode . org-bullets-mode)
@@ -212,9 +198,6 @@
 (font-lock-add-keywords 'org-mode
 			'(("^ *\\([-]\\) "
 			   (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•"))))))
-
-
-;; I don't like the green font at the top level header. Watch for ways to change this.
 
 
 
@@ -242,6 +225,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(org-agenda-files (quote ("myplan.org" "tasks.org" "dates.org")))
  '(package-selected-packages
    (quote
     (ivy-rich yasnippet-snippets find-file-in-project elpy which-key use-package tagedit smex rainbow-delimiters projectile paredit org-bullets magit ido-completing-read+ exec-path-from-shell counsel clojure-mode-extra-font-locking cider))))
